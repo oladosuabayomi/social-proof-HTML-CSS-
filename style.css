@@ -1,0 +1,12 @@
+/* font-family: 'League Spartan',
+sans-serif;
+font-family: 'Outfit',
+sans-serif; */
+:root {
+    --primary-color-magenta: hsl(300, 43%, 22%);
+    --primary-color-pink: hsl(333, 80%, 67%);
+    --text-color-gray: hsl(303, 10%, 53%);
+    --text-color-white: hsl(300, 24%, 96%);
+    --bg-color: hsl(0, 0%, 100%);
+    --star-color: #ffa500;
+}
