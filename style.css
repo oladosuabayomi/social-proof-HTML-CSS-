@@ -19,15 +19,23 @@ sans-serif; */
 
 body {
     background-color: var(--bg-color);
+    font-family: 'League Spartan', sans-serif;
 }
 
 .inner-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
 }
 
-.row {
-    display: flex;
+.row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color-magenta);
 }
