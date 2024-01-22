@@ -22,20 +22,27 @@ body {
     font-family: 'League Spartan', sans-serif;
 }
 
-.inner-wrapper {
-    display: grid;
-    padding-block: 2rem;
-    width: min(95%, 70rem);
-    margin-inline: auto;
+.wrapper {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .row-1 {
+    display: flex;
+}
+
+.col-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    column-gap: 200px;
+
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     color: var(--primary-color-magenta);
 }
