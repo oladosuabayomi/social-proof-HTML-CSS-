@@ -5,9 +5,9 @@ sans-serif; */
 :root {
     --primary-color-magenta: hsl(300, 43%, 22%);
     --primary-color-pink: hsl(333, 80%, 67%);
-    --text-color-gray: hsl(303, 10%, 53%);
-    --text-color-white: hsl(300, 24%, 96%);
-    --bg-color: hsl(0, 0%, 100%);
+    --text-color-dark-gray: hsl(303, 10%, 53%);
+    --text-color-light-gray: hsl(300, 24%, 96%);
+    --bg-color-white: hsl(0, 0%, 100%);
     --star-color: #ffa500;
 }
 
@@ -22,27 +22,87 @@ body {
     font-family: 'League Spartan', sans-serif;
 }
 
+/* main {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+}
+ */
 .wrapper {
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+}
+
+.inner-wrapper {
     max-width: 100%;
+    margin: 60px auto;
+    padding: 80px 60px;
+}
+
+.bg-pattern-top {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .row-1 {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .col-2 {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    column-gap: 200px;
-
+    flex-basis: 50%;
+    min-width: 300px;
 }
 
-h1 {
-    font-size: 3.2rem;
+.head-content h1 {
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--primary-color-magenta);
+    margin-bottom: 20px;
+}
+
+.head-content p {
+    font-size: 1.125rem;
+    color: var(--text-color-dark-gray);
+    font-weight: 500;
+}
+
+.rating {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.rate {
+    width: 420px;
+    background-color: var(--text-color-light-gray);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rate:nth-child(2) {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.rate:nth-child(3) {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.rate p {
+    color: var(--primary-color-magenta);
+    font-size: 1.125rem;
+    font-weight: bold;
 }
