@@ -106,3 +106,44 @@ body {
     font-size: 1.125rem;
     font-weight: bold;
 }
+
+.row-2 {
+    display: flex;
+}
+
+.col-3 {
+    flex: 1;
+    margin-right: 40px;
+    background-color: var(--primary-color-magenta);
+    border-radius: 10px;
+    color: var(--text-color-light-gray);
+    padding: 30px;
+}
+
+.col-3:nth-child(3) {
+    margin-right: 0;
+}
+
+.customer {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.customer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.customer-status {
+    color: var(--primary-color-pink);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.customer-review {
+    line-height: 20px;
+}
