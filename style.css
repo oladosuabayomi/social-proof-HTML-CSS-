@@ -93,12 +93,12 @@ body {
 
 .rate:nth-child(2) {
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .rate:nth-child(3) {
     margin-top: 20px;
-    margin-left: 120px;
+    margin-left: 80px;
 }
 
 .rate p {
@@ -167,6 +167,7 @@ body {
 .customer-review {
     line-height: 30px;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 
@@ -177,7 +178,7 @@ body {
     }
 
     .inner-wrapper {
-        padding: 40px 20px;
+        padding: 30px 10px;
     }
 
     .row-1,
@@ -192,16 +193,23 @@ body {
     }
 
     .head-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         text-align: center;
+        line-height: 40px;
     }
 
     .head-content p {
         text-align: center;
+        font-size: 1rem;
     }
 
     .rating {
         margin-left: 0;
+    }
+
+    .rate-images img {
+        width: 20px;
+        margin-bottom: 5px;
     }
 
     .rate {
@@ -209,6 +217,10 @@ body {
         width: 100%;
         margin-left: 0;
         text-align: center;
+    }
+
+    .rate p {
+        font-size: 1.125rem;
     }
 
     .rate:nth-child(2),
@@ -219,6 +231,19 @@ body {
     .col-3 {
         width: 100%;
         margin: 0;
+        padding: 40px;
+    }
+
+    .customer-name,
+    .customer-status,
+    .customer-review {
+        font-size: 0.9375rem;
+    }
+
+    .customer img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
     }
 
 }
